@@ -57,8 +57,8 @@ cd todo-app</code></pre>
   </ol>
 
   <h2>Screenshots</h2>
-  <p><img src="https://github.com/pasindu-2002/todo-mobile-application/assets/87941322/534192a4-cd46-40bc-843d-dd90e3dec698" alt="Home Screen" style="width:50%; height:50%;"></p>
-  <p><img src="https://github.com/pasindu-2002/todo-mobile-application/assets/87941322/86d2787f-d05d-4a89-a11a-11cf1b5055e4" alt="Add/Edit Task Screen" style="width:50%; height:50%;"></p>
+  <p><img src="https://github.com/pasindu-2002/todo-mobile-application/assets/87941322/534192a4-cd46-40bc-843d-dd90e3dec698" alt="Home Screen" style="width:30%; height:30%;"></p>
+  <p><img src="https://github.com/pasindu-2002/todo-mobile-application/assets/87941322/86d2787f-d05d-4a89-a11a-11cf1b5055e4" alt="Add/Edit Task Screen" style="width:30%; height:30%;"></p>
 
   <h2>Contributing</h2>
   <ol>
