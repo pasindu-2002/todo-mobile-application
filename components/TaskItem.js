@@ -1,7 +1,26 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 
 export default function TaskItem({ task, deleteTask, markTaskCompleted, editTask }) {
+  const handleDelete = (taskId) => {
+    Alert.alert(
+      'Delete Task',
+      'Are you sure you want to delete this task?',
+      [
+        {
+          text: 'Cancel',
+          style: 'cancel',
+        },
+        {
+          text: 'Delete',
+          onPress: () => deleteTask(taskId),
+          style: 'destructive',
+        },
+      ],
+      { cancelable: true }
+    );
+  };
+
   return (
     <View style={styles.taskItem}>
       <TouchableOpacity onPress={() => markTaskCompleted(task.id)}>
@@ -11,7 +30,7 @@ export default function TaskItem({ task, deleteTask, markTaskCompleted, editTask
         <TouchableOpacity onPress={editTask}>
           <Text style={styles.edit}>Edit</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => deleteTask(task.id)}>
+        <TouchableOpacity onPress={() => handleDelete(task.id)}>
           <Text style={styles.delete}>Delete</Text>
         </TouchableOpacity>
       </View>
